@@ -63,7 +63,7 @@ self.addEventListener('push', function (e) {
 	let body = e.data ? e.data.text() : 'Push message no payload'
 	let options = {
 		body: body,
-		icon: 'favicon.png'
+		icon: 'app_icon.png'
 	}
 	e.waitUntil(
 		self.registration.showNotification('Push Notification', options)
